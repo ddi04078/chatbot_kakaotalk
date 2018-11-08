@@ -1,0 +1,28 @@
+요약 : 챗봇 원리 공부 / 파이썬과 장고 설치 / 가상환경에서 django를 이용해 api형 자동응답
+
+
+1. 카카오톡 챗봇의 원리
+	카톡 자동응답API를 통해 사용자가 입력한 input값에 대해 json으로 답변
+	keyboard -> input -> message
+	버튼을 선택하면, 해당 버튼의 이름으로 값을 전송하고 message에서 input값을 읽어 행동을 취한다.
+	카톡 방에 접속시 나오는 버튼들인 keyboard와 그 후 메시지를 처리할 message 두개를 구현하면 된다. 
+
+2.
+	파이썬 3.5.2
+	장고
+	카카오톡 플친 이름 ‘모의과사'
+
+3. Django를 이용한 API형 자동응답을 이용해 카카오톡 챗봇 만들기 - 가상환경 사용 !!
+	1) Djangogirls 대신 djg //cd djg 
+	2) 설치 사이트 : https://tutorial.djangogirls.org/ko/installation/
+	3) source myvenv/bin/activate : 가상환경 실행 명령어!
+	4) 콘솔의 프롬프트 앞에 (myvenv)접두어가 붙어있으면 virtuallenv가 시작되었음을 알수있다.
+	5) API형 자동응답을 하기 위해 일단 카카오 API중 http://서버주소 요청에 알맞게 반응하도록 해야한다. 
+	   Python과 Django를 이용해 API요청에 제대로 응답 할 수 있도록 하면된다. JSON Response만 해주면 되기때문에 Django만을 이용해 구현했다. 
+	6) Django를 이용해 https://서버주소 로 요청이 오면 JSON형태로 response하면 됨
+	7) 구현 사이트 : http://throughkim.kr/2016/07/11/kakao-haksik/
+	8) 프로젝트이름 (장고 프로젝트) : myproject (사이트와 같다)
+	   앱 이름 (실질적으로 모의과사봇을 구현할) : testapp (사이트는 dguhaksik)
+	   *** 파일위치 눈으로 확인하려면 : mySublime -> open file -> Users -> yangjiyeon -> djg
+	9) 터미널에서 파이썬 파일 수정 방법 : vi ~/settings.py
+	    커서 이동에 대한 사이트 : https://soooprmx.com/archives/2777 
