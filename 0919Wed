@@ -1,11 +1,16 @@
-1. 구글링한 사이트(php이용하는 방법)에 들어가서 따라해봄.
+1. 구글링한 사이트(php이용하는 방법)에 들어가서 따라해본다.
     http://holykisa.tistory.com/35
-2. message.php / keyboard.php / .htaccess 를 서버에 넣는방식
-3. 아마존에서 만든 ec2서버(사용자 : ubuntu)에 위의 3파일을 넣어야함
+    
+2. message.php / keyboard.php / .htaccess 를 서버에 넣는방식이다.
+
+3. 아마존에서 만든 ec2서버(사용자 : ubuntu)에 위의 3파일을 넣어야한다.
+
 4. 맥에서 winscp처럼 쓸수있는 cyberduck을 사용해 ssh접속
     https://swtpumpkin.github.io/aws/cyberduckEc2/
+
 5. cyberduck을 사용해서 아마존 서버로 ssh접속을 하고, home/ubuntu에
     keyboard.php / message.php / .htaccess(txt파일로 넣은다음 이름변경) 넣었다
+
 6. 카카오톡 관리자 -> api -> 앱 URL설정에서
   http://아마존서버/home/ubuntu/keyboard.php
   http://아마존서버/home/ubuntu/message.php 등등..시도해봤지만 실패
