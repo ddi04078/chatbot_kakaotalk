@@ -1,3 +1,5 @@
+<오늘의키워드> connection with ssh / port forward / nano editor in terminal / api test 
+
 1.조교님이 제공해주신 서버 컴으로 ssh 접속
   **터미널
     ssh nlp@203.246.112.77 -p 2467
