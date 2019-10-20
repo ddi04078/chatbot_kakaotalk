@@ -26,7 +26,7 @@
 
 
 
- ![img7](/image/img7.png)
+ ![img8](/image/img8.png)
  
  
 4. 포트실행중인 프로세스 찾고 중지하기  http://new93helloworld.tistory.com/138
