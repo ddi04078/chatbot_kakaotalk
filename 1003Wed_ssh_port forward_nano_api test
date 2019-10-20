@@ -1,0 +1,37 @@
+<키워드> connection with ssh / port forward / nano editor in terminal / api test 
+
+1.조교님이 제공해주신 서버 컴으로 ssh 접속
+  **터미널
+    ssh nlp@ip주소 -p 2467
+    2468 열어놔서 그걸로 통신하기 (카카오톡 api테스트 할때)
+
+2. 서버컴으로 접속해서 필요한 툴 설치 + 파일넣기 
+
+3. 포트포워딩 : http://storytown.tistory.com/14
+  내가 192.168.0.10 ip로 접속(아파트주소)해야하는데, 공유기를 통해야한다. 공유기에게 이정표를 달아주는게 포트포워딩이다. 
+
+4. cyberduck 사용안하고 터미널로 서버안에 직접 파일 생성하는 법
+  http://jeongchul.tistory.com/30
+  (1)터미널에서 서버에 파일 다루기 : touch 파일명(터미널에서 새 파일 생성) ->  복붙 -> 저장
+      <-> 파일 없애기 : rm 파일명
+  (2)vi 파일명 - 말고 nano(에디터) 써라
+     지우는것도 delete로 바로 안되는 듯..
+     나갈때 esc랑 : 동시에 누르면 
+  (3)nano 파일명
+    저장하고 나가기 : control x = 나가기 -> y = 저장
+    내용확인 : cat 파일명
+    ** 나노 편집기 사용법1 : https://m.blog.naver.com/PostView.nhn?blogId=audiendo&logNo=220784763013&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+    ** 나노 편집기 사용법2 : http://studymake.tistory.com/247
+    ** 나노 편집기 사용법3 : https://junistory.blogspot.com/2017/08/nano.html
+
+5. api 테스트 해봤다.
+  http://203.246.112.77:2468/urop
+  http://203.246.112.77:2467/urop
+  http://203.246.112.77/urop
+  http://203.246.112.77/urop
+  다 error!
+
+6. 조교님이 보낸 flask, js 파일 내용보니까 코드에 해당되는 포트 9090을 열어주는 코드가 있다. 
+   근데 내 php파일 안에는 포트 열어주는게 전혀 없다. php말고 js 쓰는걸로 다시 해봐야겠다!!!
+
+
